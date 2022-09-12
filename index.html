@@ -5,9 +5,259 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kieran Sahoo Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        
+    }
+    #nav{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    }
+    #nav-opt{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #nav-opt>a{
+        text-decoration: none;
+        margin-left: 18px;
+        color: black;
+        font-size: 18px;
+    }
+    #intro-sec{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+        padding: 16px;
+        border-bottom: 1px solid;
+    }
+    #intro-sec>#img1>img{
+        width:50%;
+    }
+    #about-sec{
+        width: 80%;
+        margin: auto;
+        padding: 16px;
+        border-bottom: 1px solid;
+    }
+    #about{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+    }
+    #about>#img2>img{
+        width:50%;
+        
+    }
+    #skills-sec{
+        width: 80%;
+        margin: auto;
+        padding: 16px;
+        border-bottom: 1px solid;
+    }
+    #skill{
+        
+        display: grid;
+        padding: 16px;
+        /* justify-content: space-around; */
+        align-items: center;
+        gap: 12px;
+        grid-template-columns: repeat(4,1fr);
+
+    }
+    #skill>div>img{
+        width: 40%;
+    }
+    #project-head{
+        width: 80%;
+        margin: auto;
+        margin-top: 24px;
+    }
+    #project-sec{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 16px;
+        margin-top: 24px;
+        padding: 16px;
+        border-bottom: 1px solid;
+    }
+    #project-sec>div{
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    }
+    .project>img{
+        width: 100%;
+    }
+    .project+div{
+        display: flex;
+        justify-content: space-around;
+    }
+    .project+div>button{
+        padding: 8px 24px;
+        border: none;
+        color: white;
+        border-radius: 8px;
+        background-color: blueviolet;
+    }
+    #contact-head{
+        width: 80%;
+        margin: auto;
+        margin-top: 24px;
+    }
+    #contact-sec{
+        width: 80%;
+        margin: auto;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .input1{
+        width: 100%;
+    }
+    .input2{
+        width: 100%; 
+        height: 200px;
+    }
+    #contact-sec>button{
+        padding: 8px 24px;
+        color: white;
+        border: none;
+        font-weight: bold;
+        background-color: blue;
+        margin-top: 8px;
+        border-radius: 8px;
+    }
+    #footer{
+        width: 80%;
+        margin: auto;
+        margin-top: 24px;
+
+    }
+    #footer>p{
+        text-align: center;
+        color: grey;
+        border-top: 1px solid;
+    }
+</style>
 <body>
-    <h1>Hi ! </h1>
-    <h1>My name is Kiran Kumar Sahoo</h1>
+    <div id="nav">
+        <div>
+            <h2> Kieran Sahoo </h2>
+        </div>
+        <div id="nav-opt">
+            <a href="">Home</a>
+            <a href="">About Me</a>
+            <a href="">Skills</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+            </div>
+    </div>
+    <div id="intro-sec">
+        <div>
+            <h1>Hi ! </h1>
+            <h1>My name is Kiran Kumar Sahoo</h1>
+            <h3>Java Backend Developer</h3>
+        </div>
+        <div id="img1">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+        </div>
+    </div>
+    
+    <div id="about-sec">
+        <h1>About Me</h1>
+        <div id="about">
+            <div id="img2">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+            </div>
+            <div>
+                <h3>My name is Kiran Kumar Sahoo</h3>
+                <p><li>My interests are in travelling , space , History </li>
+                <li>I also like watch and play sports </li></p>
+            </div>
+        </div>
+        
+    </div>
+    <div id="skills-sec">
+        <h1>Skills</h1>
+        <div id="skill">
+            <div><img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt=""></div>
+            <div><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt=""></div>
+            <div><img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt=""></div>
+            <div><img src="
+                https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt=""></div>
+            <div>
+                <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="">
+            </div>
+            <div>
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <h1 id="project-head">Projects</h1>
+    <div id="project-sec">
+        <div>
+            <div class="project">
+                <img src="/Screenshot (52).png" alt="">
+            </div>
+            <div>
+                <button>Demo</button>
+                <button>Repo</button>
+            </div>
+        </div>
+        <div>
+            <div class="project">
+                <img src="/Screenshot (52).png" alt="">
+            </div>
+            <div>
+                <button>Demo</button>
+                <button>Repo</button>
+            </div>
+        </div>
+        <div>
+            <div class="project">
+                <img src="/Screenshot (52).png" alt="">
+            </div>
+            <div>
+                <button>Demo</button>
+                <button>Repo</button>
+            </div>
+        </div>
+        <div>
+            <div class="project">
+                <img src="/Screenshot (52).png" alt="">
+            </div>
+            <div>
+                <button>Demo</button>
+                <button>Repo</button>
+            </div>
+        </div>
+    </div>
+    <h1 id="contact-head">Contact</h1>
+    <div id="contact-sec">
+        <p>Name : <input class="input1" type="text"></p>
+        <p>Email : <input class="input1" type="text"></p>
+        <p>Message : <input class="input2" type="text"></p>
+        <button>Submit</button>
+    </div>
+    <div id="footer">
+        <p>© Copyright 2022 Designed and Built By Kieran Sahoo • Contact @ sahookieran@outlook.com</p>
+    </div>
 </body>
 </html>
