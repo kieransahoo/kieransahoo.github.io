@@ -2,16 +2,23 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    /* background: black; */
+    
     
 }
+body{
+    background-color: #ffffff;
+}
 #nav{
-    width: 80%;
-    margin: auto;
+   
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 16px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: sticky;
+    
+    
 }
 #nav-opt{
     display: flex;
@@ -22,18 +29,92 @@
     margin-left: 18px;
     color: black;
     font-size: 18px;
+    
+}
+#nav-opt>a:hover{
+   /* text-decoration: underline; */
+   color: blueviolet;
+   font-weight: bolder;
+   font-size: 20px;
 }
 #intro-sec{
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
-    padding: 16px;
+    margin-top: 40px;
+    padding: 24px;
     border-bottom: 1px solid;
+    color: white;
+   
+   
 }
+#hello{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 16px;
+    border-radius: 8px;
+}
+.java{
+    color: blueviolet;
+    overflow: hidden; 
+  border-right: .15em solid white; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  #intro-sec>#img1{
+    display: flex;
+    justify-content: space-around;
+    
+    
+  }
 #intro-sec>#img1>img{
     width:50%;
+
+    
+}
+#download-resume{
+    display: flex;
+    justify-content: space-around;
+}
+#download-resume>p{
+    border: 1px solid;
+    padding: 8px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    
+}
+#download-resume>p:hover{
+    color: white;
+    background-color: blueviolet;
+}
+#about-sec-head{
+    width: 80%;
+    margin: auto;
+    padding: 16px;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+
 }
 #about-sec{
     width: 80%;
@@ -46,12 +127,37 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    /* padding: 16px; */
+}
+#about-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 #about>#img2>img{
     width:50%;
     
 }
+#view-profile{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+}
+#view-profile>p:nth-child(1){
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+#view-profile>p:nth-child(2){
+    padding: 8px 24px;
+    border: 1px solid;
+    color: black;
+    border-radius: 4px;
+}
+
 #skills-sec{
     width: 80%;
     margin: auto;
