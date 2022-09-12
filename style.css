@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+#nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+#nav-opt{
+    display: flex;
+    flex-wrap: wrap;
+}
+#nav-opt>a{
+    text-decoration: none;
+    margin-left: 18px;
+    color: black;
+    font-size: 18px;
+}
+#intro-sec{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding: 16px;
+    border-bottom: 1px solid;
+}
+#intro-sec>#img1>img{
+    width:50%;
+}
+#about-sec{
+    width: 80%;
+    margin: auto;
+    padding: 16px;
+    border-bottom: 1px solid;
+}
+#about{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+#about>#img2>img{
+    width:50%;
+    
+}
+#skills-sec{
+    width: 80%;
+    margin: auto;
+    padding: 16px;
+    border-bottom: 1px solid;
+}
+#skill{
+    
+    display: grid;
+    padding: 16px;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 12px;
+    grid-template-columns: repeat(4,1fr);
+
+}
+#skill>div>img{
+    width: 40%;
+}
+#project-head{
+    width: 80%;
+    margin: auto;
+    margin-top: 24px;
+}
+#project-sec{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+    margin-top: 24px;
+    padding: 16px;
+    border-bottom: 1px solid;
+}
+#project-sec>div{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.project>img{
+    width: 100%;
+}
+.project+div{
+    display: flex;
+    justify-content: space-around;
+}
+.project+div>button{
+    padding: 8px 24px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    background-color: blueviolet;
+}
+#contact-head{
+    width: 80%;
+    margin: auto;
+    margin-top: 24px;
+}
+#contact-sec{
+    width: 80%;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.input1{
+    width: 100%;
+}
+.input2{
+    width: 100%; 
+    height: 200px;
+}
+#contact-sec>button{
+    padding: 8px 24px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    background-color: blue;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+#footer{
+    width: 80%;
+    margin: auto;
+    margin-top: 24px;
+
+}
+#footer>p{
+    text-align: center;
+    color: grey;
+    border-top: 1px solid;
+}
