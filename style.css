@@ -1,25 +1,20 @@
 *{
     padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    /* background: black; */
-    
-    
+    margin: 0;   
 }
-body{
-    background-color: #ffffff;
-}
+
 #nav{
-   
+    width: 65%;
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 16px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    position: sticky;
+    justify-content: space-between;
+    background-color: white;
+    padding: 24px;
     
     
 }
+
 #nav-opt{
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +23,8 @@ body{
     text-decoration: none;
     margin-left: 18px;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
+    
     
 }
 #nav-opt>a:hover{
@@ -36,16 +32,19 @@ body{
    color: blueviolet;
    font-weight: bolder;
    font-size: 20px;
+   transition: 0.4s ease-in-out;
+   
 }
 #intro-sec{
     width: 80%;
     margin: auto;
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    padding: 24px;
-    border-bottom: 1px solid;
-    color: white;
+   /* margin-top: 8px;
+    padding: 40px; */
+    /* border: 1px solid; */
+    
    
    
 }
@@ -55,8 +54,7 @@ body{
     flex-direction: column;
     gap: 16px;
     color: black;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    padding: 16px;
+    padding: 125px;
     border-radius: 8px;
 }
 .java{
@@ -80,66 +78,64 @@ body{
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
-  #intro-sec>#img1{
-    display: flex;
-    justify-content: space-around;
-    
-    
-  }
-#intro-sec>#img1>img{
-    width:50%;
-
-    
-}
+  
 #download-resume{
     display: flex;
     justify-content: space-around;
+    margin-top: auto;
 }
-#download-resume>p{
+#download-resume>a{
     border: 1px solid;
     padding: 8px 24px;
     border-radius: 8px;
     font-weight: bold;
+    text-decoration: none;
     
 }
-#download-resume>p:hover{
+#download-resume>a:hover{
     color: white;
     background-color: blueviolet;
 }
-#about-sec-head{
-    width: 80%;
-    margin: auto;
-    padding: 16px;
-    text-align: center;
-    font-size: 40px;
-    margin-top: 40px;
-    margin-bottom: 24px;
 
-}
 #about-sec{
     width: 80%;
     margin: auto;
     padding: 16px;
-    border-bottom: 1px solid;
 }
 #about{
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    /* padding: 16px; */
+    padding: 24px;
+}
+#about_img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about_img>img{
+    width: 60%;
+    border: 1px solid;
+    border-radius: 8px;
+    
 }
 #about-detail{
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
+#about-detail>h1{
+    font-size: 48px;
+    margin-bottom: 16px;
+}
 #about>#img2>img{
     width:50%;
     
 }
 #view-profile{
-    margin-top: 16px;
+    margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -150,19 +146,26 @@ body{
     background-color: black;
     color: white;
     border-radius: 4px;
+    margin-top: auto;
 }
 #view-profile>p:nth-child(2){
     padding: 8px 24px;
     border: 1px solid;
     color: black;
     border-radius: 4px;
+    margin-top: auto;
 }
 
 #skills-sec{
     width: 80%;
     margin: auto;
     padding: 16px;
-    border-bottom: 1px solid;
+    padding: 24px;
+}
+#skills-sec>h1{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 24px;
 }
 #skill{
     
@@ -174,8 +177,24 @@ body{
     grid-template-columns: repeat(4,1fr);
 
 }
+.skill-div{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #skill>div>img{
     width: 40%;
+    
+}
+.skill-div>p{
+    margin-top: 8px;
+    text-align: center;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    
 }
 #project-head{
     width: 80%;
@@ -185,30 +204,82 @@ body{
 #project-sec{
     width: 80%;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 16px;
+}
+#project-sec>h1{
+    text-align: center;
+    font-size: 48px;
+}
+.project{
     margin-top: 24px;
-    padding: 16px;
-    border-bottom: 1px solid;
-}
-#project-sec>div{
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-}
-.project>img{
-    width: 100%;
-}
-.project+div{
     display: flex;
     justify-content: space-around;
+    gap: 24px;
+    
 }
-.project+div>button{
-    padding: 8px 24px;
-    border: none;
+.project:nth-child(2){
+    border-top: 1px solid rgb(158, 158, 158);
+    flex-direction: row-reverse;
+    padding: 16px 0px;
+}
+
+.p_details{
+    display: flex;
+    flex-direction: column;
+}
+.p_details>h3{
+    font-size: 28px;
+}
+.p_img{
+    width: 50%;
+    padding: 12px;
+
+}
+.p_img>img{
+    width: 100%;
+    border-radius: 12px;
+}
+.t_stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+.t_stack+p,.t_stack+p+p{
+    margin-top: 16px;
+}
+.t_stack>p{
+    border: 1px solid;
+    padding: 4px 16px;
+    border-radius: 2px;
+    background-color: rgb(33, 33, 33);
     color: white;
-    border-radius: 8px;
-    background-color: blueviolet;
+
 }
+.p_btn{
+    display: flex;
+  
+    
+
+}
+.p_btn>a{
+    text-decoration: none;
+    border: 1px solid;
+    padding: 4px 16px;
+    border-radius: 2px;
+    color: blueviolet;
+    margin: 16px 8px;
+  
+    font-size: 18px;
+}
+.p_btn>a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.p_btn>a:nth-child(2){
+    margin-left: 24px;
+}
+
+
 #contact-head{
     width: 80%;
     margin: auto;
@@ -232,7 +303,7 @@ body{
     color: white;
     border: none;
     font-weight: bold;
-    background-color: blue;
+    background-color: blueviolet;
     margin-top: 8px;
     border-radius: 8px;
 }
