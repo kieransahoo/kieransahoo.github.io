@@ -160,6 +160,7 @@ body{
     gap: 24px;
     padding: 16px 4px;
     flex-wrap: wrap;
+    margin-top: 16px;
     
 }
 .c_container{
