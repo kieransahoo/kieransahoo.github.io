@@ -167,7 +167,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 28px 12px;
-    border: 1px solid;
+    /* border: 1px solid; */
     
   
 }
@@ -259,7 +259,9 @@ body{
         padding: 4px;
     }
     .project{
+        padding: 0px;
         flex-direction: column;
+        
     }
     .skill-logos{
        /* border: 1px solid; */
@@ -292,7 +294,7 @@ body{
          text-align: left;
      }
      .c_container{
-         
+            padding: 0px;
            flex-direction: column;
      }
      .message{
