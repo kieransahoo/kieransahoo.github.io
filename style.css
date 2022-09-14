@@ -249,7 +249,14 @@ body{
 .p_head>a{
    padding: 4px 10px;
    font-size: 14px;
+   margin-left: 0;
     
+}
+.p_head{
+    margin-left: 0;
+}
+.p_img{
+    width: 100%;
 }
 .message{
     width: 100%;
