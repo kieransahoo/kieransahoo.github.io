@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+
 </head>
 <body>
     <div id="navbar">
@@ -34,12 +39,24 @@
             </div>
         </div>
         <div class="top_img">
-            <img src="./resources/profile.jpg" alt="">
+            <img src="./resources/2-46.gif" alt="">
         </div>
     </div>
-    <div id="about" class="section">
+    <div  class="section">
         <h1>About</h1>
-        <p class="grey_text">Hi, My name is Kiran Kumar Sahoo , Aspiring Backend Developer . I love techonology that are user friendly and problem solving.I like to travel and study about History.</p>
+        <div id="about">
+            <div class="p_img_div">
+                <img src="./resources/profile.jpg" alt="">
+            </div>
+            <div class="abt_cont">
+                <p class="grey_text">Hi, My name is Kiran Kumar Sahoo , Aspiring Backend Developer . I love techonology that are user friendly and problem solving.I like to travel and study about History.</p>
+                <div class="off_social">
+                    <a href="www.linkedin.com/in/kieransahoo">Linkedin</a>
+                    <a href="https://github.com/kieransahoo">GitHub</a>
+                </div>
+            </div>
+        </div>
+        
     </div>
     <div id="Skills" class="section">
         <h1>Skills / Tools</h1>
@@ -88,17 +105,19 @@
            
 
     </div>
+    <!-- <div class="calendar">Loading the data just for you.</div> -->
+
     <div id="projects" class="section">
         <h1>Projects</h1>
         <div class="project">
             <div class="p_head">
                 <h3>NDTV Clone</h3>
                 <p class="grey_text">2022</p>
-                <a href="">View Demo</a>
-                <a href="">View Repo</a>
+                <a href="https://ndtv-hot-wood-7345.netlify.app/" target="_blank">View Demo</a>
+                <a href="https://github.com/kieransahoo/hot-wood-7345.git" target="_blank">View Repo</a>
             </div>
             <div class="p_detail">
-                <img class="p_img"  src="./resources/Home-NDTV.png" alt="">
+                <img class="p_img"  src="./resources/Screenshot (63).png" alt="">
                 <p>Clone project of one of the biggest news channel in India which provide a new from all over the world in various categories like sports, politics, media, etc.
 
                 Collabrative project Built by 5 members in a week.</p>
@@ -110,8 +129,8 @@
             <div class="p_head">
                 <h3>KFC Clone</h3>
                 <p class="grey_text">2022</p>
-                <a href="https://ndtv-hot-wood-7345.netlify.app/">View Demo</a>
-                <a href="https://github.com/kieransahoo/hot-wood-7345.git">View Repo</a>
+                <a href="https://stellar-hamster-d75ef8.netlify.app/" target="_blank">View Demo</a>
+                <a href="https://github.com/Randhir200/KFC-Clone.git" target="_blank">View Repo</a>
             </div>
             <div class="p_detail">
                 <img class="p_img"  src="./resources/Home-KFC.png" alt="">
@@ -136,9 +155,9 @@
                 <p></p>
             </div>
             <div class="message">
-                <p><input class="input" type="text" placeholder="Name"> <input class="input" type="text" placeholder="Email"></p>
-                <input class="input" type="text" placeholder="Subject">
-                <input class="input" type="text" placeholder="Message">
+                <p><input class="input" type="text" placeholder="Name" id="name"> <input class="input" type="text" placeholder="Email" id="cemail"></p>
+                <input class="input" type="text" placeholder="Subject" id="subject">
+                <input class="input" type="text" placeholder="Message" id="message">
                 <a href=""></a>
                 <button class="msg_btn">Submit</button>
             </div>
@@ -147,3 +166,45 @@
     </div>
 </body>
 </html>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<script>
+    var btn = document.querySelector(".msg_btn");
+    btn.addEventListener("click",function(e){
+        e.preventDefault();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("cemail").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+        var body = "name: "+name+"<br/> email : "+ email+"<br/> subject"+subject+"<br/> message"+ message;
+
+        Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "kkieran50@gmail.com",
+        Password : "A54012889E2509F144E49F256F5B51A5C069",
+        To : 'kkieran50@gmail.com',
+        From : email,
+        Subject : subject,
+        Body : body
+}).then(
+  message => alert(message)
+);
+        
+    })
+</script>
+<script>
+    GitHubCalendar(".calendar", "kieransahoo");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "kieransahoo", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "kieransahoo", {
+       proxy (kieransahoo) {
+         return fetch(`https://your-proxy.com/github?user=${kieransahoo}`)
+       }
+    }).then(r => r.text())
+</script>
