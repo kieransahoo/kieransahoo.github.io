@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-color:#f5b041;
+    --second-color:#212f3d
+}
+section{
+    padding:100px;
+}
+
+/* Home */
+#home{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Navbar CSS */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.5s;
+
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: var(--second-color);
+    font-weight: 700;  
+    border: 2px solid;
+    padding: 8px;
+
+}
+ul{
+    display: flex;
+}
+ul li a{
+    padding: 10px 22px;
+    color:var(--second-color);
+    border-radius: 2px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+ul li a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+}
+/* Home text CSS */
+.home-text{
+    max-width: 500px;
+    
+}
+.home-text h1{
+    color: var(--second-color);
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    line-height: 5.5rem;
+}
+.home-text span{
+    color: var(--main-color);
+}
+.home-img{
+    width: 500px;
+    height: 500px;
+}
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Resume button */
+.home-text a{
+    padding: 12px 34px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 8px;
+    letter-spacing: 1px;
+}
+
+.home-text a:hover{
+    background-color: var(--second-color);
+    box-shadow: 0 10px 34px rgba(0, 161, 176, 0.14);
+}
+
+/* Social */
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid; */
+}
+.social a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--second-color);
+    
+}
+.social i{
+    margin-right: 24px;
+    font-size: 24px;
+    align-self: center;
+}
+.social i:hover{
+    color: var(--main-color);
+}
+
+/* Heading */
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading h2{
+    color: var(--second-color);
+    border-bottom: 3px solid var(--second-color);
+    font-size: 1.8rem;
+}
+.heading p{
+    color: var(--second-color);
+    margin-top: 0.5rem;
+}
+.about-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-img{
+    width: 320px;
+    height: 500px;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.about-text{
+    width: 500px;
+    justify-content: center;
+}
+.about-text h1{
+    font-size: 1.5rem;
+    color: var(--second-color);
+}
+.about-text p{
+    color: var(--second-color);
+    margin: 5px 0 24px;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+.about-text a{
+    padding: 12px 20px;
+    background: var(--second-color);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Skill Section */
+.content p{
+    font-size: 1.5rem;
+    color: var(--second-color);
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+    align-self: center;
+    
+}
+.skills-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+.content{
+    width: 320px;
+    margin-top: 24px;
+    /* border: 1px solid; */
+}
+.content .tech-stack{
+    /* border: 1px solid; */
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 24px;
+    
+}
+.content .tech-stack i{
+    font-size: 40px;
+}
+.content .tech-stack p{
+    
+    font-size: 18px;
+}
+
+/* Project Section */
+
+.project-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.project-content .box{
+    padding: 40px 20px;
+    /* background-color: var(--second-color); */
+    max-width: 500px;
+    margin: 16px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 34px rgba(0, 161, 176, 0.14);
+}
+.box img{
+    width: 100%;
+}
+.box h1{
+    font-size: 1.3rem;
+}
+.box p{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.project-content .box:hover{
+    transform: translateY(-10px);
+    background: var(--main-color);
+    transition: 0.5s;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 16px;
+}
+.links a{
+    padding: 10px 30px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.links a i{
+    font-size: 24px;
+}
+.links a:hover{
+    background-color: var(--second-color);
+    box-shadow: 0 10px 34px rgba(0, 161, 176, 0.14);
+    
+}
+.calendar{
+    margin-top: 40px;
+    background: var(--second-color);
+    padding: 10px 30px;
+    color: #fff;
+}
+
+/* Contact Section */
+#contact{
+   background: var(--second-color); 
+}
+#contact>.heading>h2{
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 1.8rem;
+}
+#contact>.heading>p{
+    color: #fff;
+}
+.contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-form{
+    width: 360px;
+    margin-top: 4rem;;
+}
+.contact-form form input, .contact-form form textarea{
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    margin-bottom: 12px;
+}
+.contact-form form input::placeholder, 
+.contact-form form textarea::placeholder{
+    color: var(--second-color);
+    letter-spacing: 1px;
+}
+.contact-form form textarea{
+    resize: none;
+    height: 200px;
+}
+.contact-button{
+    max-width: 100px;
+    font-weight: 600;
+    background: var(--main-color);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.contact-details h3{
+    margin-bottom: 12px;
+    color: var(--main-color);
+}
+.contact-details p{
+    margin-bottom: 12px;
+    color: #fff;
+}
+.contact-socials{
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 24px;
+    
+}
+.contact-socials a{
+    display: flex;
+    align-items: center;
+}
+.contact-socials a i{
+    color: var(--main-color);
+    font-size: 40px;
+}
+.contact-socials a i:hover{
+    transform: translateY(-10px);
+}
+
+
+/* Responsive */
+@media(max-width:991px){
+    nav{
+        padding: 10px 50px;
+        z-index: 1000;
+    }
+    .menu{
+        position: fixed;
+        top: 60px;
+        right: 1000px;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: var(--second-color);
+        transition: 0.5s ease;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .menu.active{
+        right: 0;
+    }
+    nav ul li a{
+        font-size: 35px;
+        line-height: 80px;
+        color: #fff;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(./images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active{
+        background: url(./images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    section{
+        padding: 80px;
+    }
+    .home-text h1{
+        font-size: 2.5rem;
+        margin-bottom: 1.8rem;
+        line-height: 4rem;
+    }
+    .home-img{
+        width: 400px;
+        height: 400px;
+    }
+    .social{
+        left: 100px;
+    }
+    .heading h2{
+        font-size: 1.6rem;
+    }
+    .about-img{
+        width: 250px;
+        height: 400px;
+    }
+    .about-text{
+        width: 400px;
+    }
+    .about-text h1{
+        font-size: 1.3rem;
+    }
+    .about-text p{
+        line-height: 1.5rem;
+    }
+}
+
+@media(max-width: 871px){
+    section{
+        padding: 50px;
+
+    }
+}
+@media(max-width: 800px){
+    section{
+        padding: 35px;
+
+    }
+}
+@media(max-width: 750px){
+    section{
+        padding: 35px;
+
+    }
+    .about-text{
+        max-width: 280px;
+    }
+}
+@media(max-width: 480px){
+    section{
+        padding: 35px;
+
+    }
+    #home{
+        flex-direction: column;
+    }
+    .home-text{
+        max-width: 400px;
+        margin-top: 500px;
+        
+    }
+    .home-img{
+        width: 345px;
+        height: 400px;
+        margin-top: 24px;
+        margin-bottom: 400px;
+    }
+    .home-text h1{
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+        line-height: 3rem;
+    }
+    .about-content,.skills-content,.contact-content{
+        flex-direction: column;
+    }
+    .about-text{
+        max-width: 280px;
+    }
+    .links a{
+        padding: 8px 20px;
+        margin-right: 2px;
+    }
+    .contact-form{
+        width: 300px;
+    }
+}
+@media(max-width: 360px){
+    section{
+        padding: 35px;
+
+    }
+    #home{
+        flex-direction: column;
+    }
+    .home-text{
+        max-width: 400px;
+        margin-top: 200px;
+        
+    }
+    .home-img{
+        width: 345px;
+        height: 400px;
+        margin-top: 24px;
+        margin-bottom: 400px;
+    }
+    .home-text h1{
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+        line-height: 3rem;
+    }
+    .about-content,.skills-content,.contact-content{
+        flex-direction: column;
+    }
+    .about-text{
+        max-width: 280px;
+    }
+    .links a{
+        padding: 8px 20px;
+        margin-right: 2px;
+    }
+    .contact-form{
+        width: 300px;
+    }
+}

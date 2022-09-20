@@ -4,207 +4,216 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio Website</title>
+    <!-- Link to css -->
+    <link rel="stylesheet" href="./styles.css ">
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link
-    rel="stylesheet"
-    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-    />
-
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
 </head>
+
 <body>
-    <div id="navbar">
-        <div>
-            <h1>KS</h1>
+    <!-- Navbar -->
+    <nav>
+        <a href="#" class="logo">KS</a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+
+        <!-- Menu -->
+        <ul class="menu">
+            <li><a href= "#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();" >About</a></li>
+            <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+            <li><a href="#project" onclick="toggleMenu();">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Main text and Image -->
+    <section id="home">
+        <div class="home-text">
+            <h1>Hi, I'm <br>Kiran Kumar <span>Sahoo</span><br>Java Backend Developer</h1>
+            <!-- Button -->
+            <a href="https://drive.google.com/file/d/1PZb5FuiA8avpdB251Uio2xCAe3iqvc4b/view?usp=sharing" target="_blank">Resume</a>
         </div>
-        <div class="nav_opt">
-            <a href="">About</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
+        <div class="home-img">
+            <img src="https://miro.medium.com/max/1360/0*7Q3yvSIv_t0ioJ-Z.gif" alt="">
         </div>
-    </div>
-    <div class="top section" >
         
-        <div class="top_details">
-            <h2>Hi, &#128075; I'm</h2>
-            <h2>Kiran Kumar Sahoo</h2>
-            <h3 class="grey_text">Java Backend Developer</h3>
-            <div class="btn_div">
-                <a class="intro_btn" href="https://drive.google.com/file/d/1POnXQffHas4p0A2JTXNCn8IdtBvSB52Z/view?usp=sharing" target="_blank">Resume <i class="fa fa-download"></i></a> 
-                <a class="intro_btn"n href="#contact">Contact</a>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <!-- heading -->
+        <div class="heading">
+            <h2>About</h2>
+            <p>My Introduction</p>
+        </div>
+        <!-- About Content -->
+        <div class="about-content">
+            <div class="about-img">
+                <img src="./images/profileimg.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <h1>I'm Kiran Kumar Sahoo</h1>
+                <p>Aspiring Java backend Developer. Passionate and curious about technology . I love technology that are user friendly and problem solving.</p>
+                <p>I am a student at Masai School where I already spent 6 months learning fundamentals of front-end and backend web development. I also worked as a Technical Support Engineer where my role to understand and solve the queries for the customers.</p>
+                <p>I'm currently looking for a new role as a Java Developer. Hire me ?</p>
+                <!-- Social -->
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/kieransahoo/" target="_blank"><i class='bx bxl-linkedin'></i>Linkedin</a>
+                    <a href="https://github.com/kieransahoo" target="_blank"><i class='bx bxl-github' ></i>GitHUb</a>
+                </div>
+                
             </div>
         </div>
-        <div class="top_img">
-            <img src="./resources/2-46.gif" alt="">
+    </section>
+
+    <!-- Skills  Section -->
+    <section id="skills">
+        <!-- heading -->
+        <div class="heading">
+            <h2>Skills/Tools</h2>
         </div>
-    </div>
-    <div  class="section">
-        <h1>About</h1>
-        <div id="about">
-            <div class="p_img_div">
-                <img src="./resources/profile.jpg" alt="">
+        <div class="skills-content">
+            <div class="content">
+                <p>Front-End Skills</p>
+                <div class="tech-stack">
+                    <i class='bx bxl-html5' style='color:#ff5733' ></i>
+                    <p>HTML</p>
+                    <i class='bx bxl-css3' style='color:#264de4'  ></i>
+                    <p>CSS</p>
+                    <i class='bx bxl-javascript' style='color:#e8c012'  ></i>
+                    <p>JAVASCRIPT</p>
+                </div>
             </div>
-            <div class="abt_cont">
-                <p class="grey_text">Hi, My name is Kiran Kumar Sahoo , Aspiring Backend Developer . I love techonology that are user friendly and problem solving.I like to travel and study about History.</p>
-                <div class="off_social">
-                    <a href="www.linkedin.com/in/kieransahoo">Linkedin</a>
-                    <a href="https://github.com/kieransahoo">GitHub</a>
+            <div class="content">
+                <p>Back-End Skills</p>
+                <div class="tech-stack">
+                    <i class='bx bxl-java' style='color:#f89820'  ></i>
+                    <p>JAVA</p>
+                    <i class='bx bxl-spring-boot' style='color:#0a953a'  ></i>
+                    <p>SPRING-BOOT</p>
+                    <i class='bx bxl-nodejs' style='color:#3c873a'  ></i>
+                    <p>NODE JS</p>
+                    
+                </div>
+            </div>
+            <!-- <div class="content">
+                <p>Data Structure Algorithms</p>
+                <div class="dsa-content">
+                    <p>PROBLEM SOLVING</p>
+                </div>
+            </div> -->
+            <div class="content">
+                <p>Tools/Others</p>
+                <div class="tech-stack">
+                    <i class='bx bxl-github' ></i>
+                    <p>GITHUB</p>
+                    <i class='bx bxl-git' style='color:#f34f29'  ></i>
+                    <p>GIT</p>
+                    <i class='bx bxl-visual-studio' style='color:#0078d7'  ></i>
+                    <p>VISUAL STUDIO</p>
                 </div>
             </div>
         </div>
-        
-    </div>
-    <div id="Skills" class="section">
-        <h1>Skills / Tools</h1>
-       <div class="skill-logos">
-        <svg width="130" height="49" viewBox="0 0 130 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.4363 37.108C11.4363 37.108 9.59333 38.23 12.7183 38.551C16.4853 39.031 18.4883 38.951 22.6563 38.151C23.494 38.6637 24.3799 39.0931 25.3013 39.433C15.9243 43.44 4.06133 39.193 11.4353 37.109L11.4363 37.108ZM10.2343 31.898C10.2343 31.898 8.23033 33.421 11.3563 33.741C15.4443 34.141 18.6493 34.221 24.1803 33.101C24.7183 33.6468 25.377 34.0586 26.1033 34.303C14.8033 37.669 2.13933 34.623 10.2333 31.899L10.2343 31.898ZM32.3543 41.035C32.3543 41.035 33.7173 42.157 30.8313 43.039C25.4613 44.642 8.30933 45.123 3.50133 43.039C1.81833 42.319 5.02433 41.276 6.06633 41.116C7.10833 40.876 7.66933 40.876 7.66933 40.876C5.82633 39.594 -4.59367 43.521 2.36933 44.643C21.5243 47.769 37.3133 43.281 32.3443 41.036L32.3543 41.035ZM12.3183 26.448C12.3183 26.448 3.58233 28.532 9.19233 29.253C11.5963 29.573 16.3253 29.493 20.7323 29.173C24.3393 28.853 27.9453 28.211 27.9453 28.211C27.9453 28.211 26.6633 28.771 25.7813 29.333C16.8853 31.657 -0.186667 30.615 4.70133 28.211C8.86933 26.207 12.3153 26.448 12.3153 26.448H12.3183ZM27.9483 35.184C36.9243 30.534 32.7583 26.047 29.8723 26.608C29.1523 26.768 28.8303 26.928 28.8303 26.928C28.8303 26.928 29.0703 26.448 29.6303 26.288C35.3203 24.284 39.8103 32.298 27.7873 35.425C27.7873 35.425 27.8673 35.345 27.9473 35.185L27.9483 35.184ZM13.2003 47.847C21.8563 48.407 35.0803 47.527 35.4003 43.439C35.4003 43.439 34.7603 45.042 28.2673 46.244C20.8933 47.607 11.7673 47.446 6.38733 46.564C6.38733 46.564 7.50933 47.526 13.1993 47.846L13.2003 47.847Z" fill="#4E7896"/>
-            <path d="M22.4963 0C22.4963 0 27.4663 5.05 17.7663 12.663C9.99234 18.833 16.0033 22.361 17.7663 26.368C13.1983 22.281 9.91234 18.674 12.1663 15.308C15.4443 10.34 24.5003 7.935 22.4963 0ZM19.9313 23.002C22.2553 25.647 19.2913 28.052 19.2913 28.052C19.2913 28.052 25.2213 25.006 22.4973 21.239C20.0123 17.632 18.0893 15.869 28.5073 9.859C28.5073 9.859 12.0773 13.947 19.9313 23.003V23.002Z" fill="#F58219"/>
-            <path d="M81.6833 39.583V21.397C81.6833 16.757 79.0853 13.603 72.5903 13.603C68.8803 13.603 65.7243 14.531 62.9403 15.643L63.8683 18.983C65.9083 18.241 68.5083 17.498 71.2913 17.498C74.8173 17.498 76.4873 18.983 76.4873 21.952V24.364H74.6313C65.7243 24.364 61.6313 27.704 61.6313 33.086C61.6313 37.54 64.4153 40.138 69.4253 40.138C72.5803 40.138 74.9923 38.653 77.2193 36.798L77.5893 39.582H81.6723L81.6833 39.583ZM76.4873 33.645C74.6313 35.315 72.5903 36.243 70.7343 36.243C68.3223 36.243 66.8373 34.758 66.8373 32.16C66.8373 29.562 68.3223 27.706 74.2603 27.706H76.4873V33.644V33.645ZM99.1273 39.583H92.6323L84.8383 14.16H90.4053L95.2303 29.748L96.3433 34.388C98.7563 27.708 100.611 20.841 101.353 14.161H106.92C105.435 22.511 102.838 31.604 99.1263 39.584L99.1273 39.583ZM129.189 39.583V21.397C129.189 16.757 126.591 13.603 120.096 13.603C116.386 13.603 113.23 14.531 110.446 15.643L111.188 18.983C113.415 18.241 116.013 17.498 118.796 17.498C122.322 17.498 123.992 18.983 123.992 21.952V24.364H122.136C113.229 24.364 109.136 27.704 109.136 33.086C109.136 37.54 111.734 40.138 116.744 40.138C120.084 40.138 122.497 38.653 124.724 36.798L125.094 39.582H129.177L129.189 39.583ZM123.993 33.645C122.137 35.315 120.096 36.243 118.24 36.243C115.828 36.243 114.343 34.758 114.343 32.16C114.343 29.562 115.827 27.706 121.766 27.706H123.993V33.644V33.645ZM55.8893 43.85C54.4043 46.077 52.1793 47.747 49.3943 48.675L46.9813 45.705C48.8373 44.592 50.6933 42.922 51.4353 41.437C52.1773 40.137 52.3633 38.282 52.3633 34.014V5.064H57.9303V33.642C57.9303 39.395 57.3733 41.622 55.8903 43.848L55.8893 43.85Z" fill="#4E7896"/>
-        </svg>
-        <svg width="49" height="49" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 36V0H36V36H0Z" fill="#F7DF1E"/>
-            <path d="M23.538 26.947C24.23 28.071 24.982 29.148 26.575 29.148C27.913 29.148 28.615 28.483 28.615 27.563C28.615 26.462 27.889 26.071 26.417 25.43L25.61 25.086C23.281 24.098 21.732 22.86 21.732 20.245C21.732 17.835 23.577 16.001 26.46 16.001C28.513 16.001 29.988 16.712 31.052 18.574L28.538 20.181C27.985 19.193 27.387 18.804 26.46 18.804C25.514 18.804 24.915 19.401 24.915 20.181C24.915 21.145 25.515 21.535 26.9 22.132L27.707 22.476C30.452 23.645 32 24.839 32 27.523C32 30.415 29.716 32 26.65 32C23.651 32 21.948 30.495 21 28.632L23.538 26.947ZM11.952 27.029C12.458 27.935 13.227 28.632 14.333 28.632C15.391 28.632 16 28.214 16 26.589V16H19.333V27.101C19.333 30.468 17.38 32 14.528 32C11.951 32 10.091 30.254 9.33301 28.632L11.952 27.029Z" fill="#000001"/>
-        </svg>
-            
-        <svg width="130" height="49" viewBox="0 0 108 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 9.41501H5.7V15.045H10.913V9.41501H16.613V26.465H10.913V20.765H5.7V26.465H0V9.41501V9.41501ZM24.107 15.07H19.08V9.41601H34.816V15.07H29.796V26.467H24.096V15.07H24.107ZM37.314 9.41501H43.257L46.913 15.415L50.565 9.41501H56.5V26.465H50.824V18.013L46.904 24.076H46.806L42.9 18.014V26.466H37.324L37.314 9.41501ZM59.344 9.41501H65.044V20.84H73.059V26.476H59.345L59.344 9.41501Z" fill="white"/>
-            <path d="M75.77 0H107.407L104.525 32.288L91.57 35.88L78.65 32.293L75.77 0Z" fill="#E44D26"/>
-            <path d="M102.06 30.233L104.523 2.64101H91.6V33.135L102.06 30.233Z" fill="#F16529"/>
-            <path d="M86.35 14.618L85.988 10.562H91.6V6.60201H81.67L82.738 18.579H91.6V14.619L86.35 14.618ZM82.904 20.56L83.459 26.78L91.572 29.032L91.59 29.027V24.907L91.573 24.912L87.173 23.712L86.891 20.552H84.748L82.904 20.56Z" fill="#EBEBEB"/>
-            <path d="M100.686 15.68L100.783 14.616H91.577V18.576H96.454L95.994 23.713L91.577 24.905V29.025L99.697 26.775L99.757 26.105L100.686 15.68ZM91.586 10.562H101.153L101.508 6.59201H91.586V10.542V10.562Z" fill="white"/>
-        </svg>
-        <svg width="130" height="49" viewBox="0 0 105 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M46.1577 10.5466H63.4448V17.7758H53.3868V25.0049H63.4448V32.2341H46.1577V10.5466Z" fill="#EBEBEB"/>
-            <path d="M66.9022 10.5466H84.1893V16.8328H74.1314V18.0901H84.1893V32.5484H66.9022V25.9479H76.9602V24.6906H66.9022V10.5466Z" fill="#EBEBEB"/>
-            <path d="M87.6467 10.5466H104.934V16.8328H94.8759V18.0901H104.934V32.5484H87.6467V25.9479H97.7047V24.6906H87.6467V10.5466Z" fill="#EBEBEB"/>
-            <path d="M35.004 39.3051L19.2327 43.6774L3.50487 39.3113L0 0H38.5125L35.004 39.3051Z" fill="#264DE4"/>
-            <path d="M19.2563 40.3354L32.0002 36.8023L34.9985 3.21429H19.2563V40.3354Z" fill="#2965F1"/>
-            <path d="M19.2563 17.7943H8.03485L8.46698 22.6156H19.2563V17.7943Z" fill="#EBEBEB"/>
-            <path d="M19.2396 8.03571H7.16658L7.60486 12.8571H19.2563V8.03571H19.2396Z" fill="#EBEBEB"/>
-            <path d="M19.2352 30.3215L13.8656 28.8716L13.5223 25.0263H10.9131H8.68241L9.35788 32.5966L19.2341 35.3383L19.2563 35.3321V30.3159L19.2352 30.3215Z" fill="#EBEBEB"/>
-            <path d="M26.0334 12.8571L25.5947 17.7943H19.2396V22.6156H25.1766L24.6169 28.8685L19.2396 30.3199V35.336L29.1237 32.5966L29.1962 31.782L30.3292 19.089L30.4468 17.7943L31.3172 8.03571H19.2396V12.8571H26.0334Z" fill="white"/>
-        </svg>
-        <svg width="95" height="44" viewBox="0 0 95 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M63.03 17.27C61.33 17.27 60.062 18.105 60.062 20.115C60.062 21.615 60.897 22.68 62.937 22.68C64.667 22.68 65.842 21.66 65.842 20.052C65.842 18.227 64.792 17.27 63.03 17.27ZM59.63 31.46C59.227 31.954 58.826 32.48 58.826 33.085C58.826 34.32 60.401 34.693 62.566 34.693C64.359 34.693 66.801 34.568 66.801 32.9C66.801 31.91 65.626 31.848 64.141 31.755L59.641 31.447L59.63 31.46ZM68.78 17.362C69.335 18.075 69.924 19.062 69.924 20.485C69.924 23.915 67.224 25.925 63.34 25.925C62.34 25.925 61.465 25.8 60.897 25.647L59.877 27.272L62.907 27.457C68.257 27.797 71.407 27.953 71.407 32.062C71.407 35.618 68.287 37.624 62.907 37.624C57.312 37.624 55.18 36.202 55.18 33.749C55.18 32.359 55.8 31.616 56.88 30.595C55.86 30.165 55.52 29.391 55.52 28.557C55.52 27.877 55.86 27.257 56.417 26.682L58.333 24.827C56.818 24.087 55.673 22.477 55.673 20.202C55.673 16.647 58.023 14.206 62.753 14.206C64.083 14.206 64.887 14.329 65.598 14.516H71.626V17.143L68.781 17.359M77.063 11.744C75.313 11.744 74.281 10.724 74.281 8.96C74.281 7.196 75.301 6.24 77.063 6.24C78.856 6.24 79.876 7.2 79.876 8.96C79.876 10.72 78.856 11.744 77.064 11.744H77.063ZM73.063 30.322V27.882L74.641 27.666C75.073 27.604 75.136 27.511 75.136 27.046V17.96C75.136 17.62 75.043 17.404 74.733 17.31L73.063 16.723L73.403 14.221H79.803V27.051C79.803 27.546 79.833 27.607 80.298 27.671L81.873 27.887V30.325H73.06M94.11 29.125C92.78 29.775 90.832 30.375 89.07 30.375C85.39 30.375 84 28.893 84 25.398V17.298C84 17.113 84 16.988 83.75 16.988H81.6V14.238C84.32 13.938 85.403 12.568 85.743 9.198H88.68V13.588C88.68 13.803 88.68 13.898 88.928 13.898H93.288V16.988H88.67V24.363C88.67 26.188 89.104 26.898 90.77 26.898C91.636 26.898 92.52 26.682 93.274 26.404L94.109 29.124" fill="#362701"/>
-            <path d="M41.67 20.25L23.138 1.72C22.072 0.653004 20.341 0.653004 19.273 1.72L15.426 5.568L20.306 10.448C21.441 10.065 22.741 10.323 23.643 11.225C24.0737 11.6564 24.3744 12.2002 24.5107 12.7944C24.647 13.3885 24.6135 14.009 24.414 14.585L29.118 19.289C30.243 18.897 31.568 19.152 32.478 20.059C32.8823 20.4625 33.1731 20.9653 33.3212 21.517C33.4693 22.0687 33.4694 22.6496 33.3214 23.2013C33.1735 23.753 32.8828 24.2559 32.4786 24.6595C32.0743 25.0631 31.5709 25.353 31.019 25.5C30.4676 25.6479 29.887 25.6479 29.3356 25.5001C28.7842 25.3523 28.2815 25.0618 27.878 24.658C26.923 23.702 26.688 22.298 27.171 21.121L22.796 16.746V28.291C23.096 28.445 23.398 28.648 23.656 28.906C24.926 30.176 24.926 32.234 23.656 33.506C23.3541 33.8082 22.9957 34.048 22.6011 34.2115C22.2066 34.3751 21.7836 34.4593 21.3565 34.4593C20.9294 34.4593 20.5064 34.3751 20.1118 34.2115C19.7173 34.048 19.3588 33.8082 19.057 33.506C17.787 32.233 17.787 30.176 19.057 28.906C19.3617 28.6015 19.7237 28.3602 20.122 28.196V16.546C19.747 16.386 19.372 16.152 19.057 15.846C18.6006 15.3899 18.2903 14.8082 18.1656 14.1751C18.041 13.542 18.1076 12.8861 18.357 12.291L13.545 7.478L0.829987 20.163C0.318867 20.6765 0.0319214 21.3715 0.0319214 22.096C0.0319214 22.8205 0.318867 23.5155 0.829987 24.029L19.363 42.559C20.429 43.626 22.16 43.626 23.228 42.559L41.67 24.116C42.1811 23.6025 42.468 22.9075 42.468 22.183C42.468 21.4585 42.1811 20.7635 41.67 20.25" fill="#F03C2E"/>
-        </svg>
-        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M26 0C11.641 0 0 11.641 0 26C0 38.277 8.512 48.56 19.955 51.286C19.363 51.145 18.776 50.987 18.2 50.807V44.85C18.2 44.85 17.225 45.175 15.925 45.175C12.288 45.175 10.777 41.93 10.4 40.3C10.171 39.307 9.573 38.366 8.931 37.791C8.164 37.107 7.805 37.105 7.8 36.871C7.79 36.38 8.458 36.4 8.775 36.4C10.4 36.4 11.632 38.129 12.204 39.023C13.621 41.23 15.142 41.6 15.925 41.6C16.9 41.6 17.742 41.454 18.322 41.174C18.59 39.286 19.43 37.604 20.8 36.4C14.703 35.181 10.4 31.684 10.4 26C10.4 23.072 11.575 20.381 13.533 18.208C13.333 17.641 13 16.494 13 14.625C13 13.39 13.086 11.874 13.65 10.4C13.65 10.4 17.358 10.426 20.855 13.738C22.469 13.268 24.196 13 26 13C27.804 13 29.531 13.268 31.145 13.738C34.642 10.426 38.35 10.4 38.35 10.4C38.917 11.874 39 13.39 39 14.625C39 16.64 38.732 17.815 38.568 18.322C40.466 20.475 41.6 23.124 41.6 26C41.6 31.684 37.297 35.181 31.2 36.4C32.828 37.83 33.8 39.913 33.8 42.25V50.807C33.224 50.988 32.638 51.145 32.045 51.286C43.488 48.56 52 38.277 52 26C52 11.641 40.359 0 26 0ZM27.813 51.93C27.214 51.972 26.61 52 26 52C26.61 52 27.213 51.971 27.813 51.93ZM31.786 51.346C30.622 51.611 29.429 51.797 28.211 51.9C29.429 51.797 30.622 51.61 31.786 51.346ZM26 52C25.39 52 24.786 51.972 24.187 51.93C24.787 51.971 25.39 52 26 52ZM23.788 51.9C22.571 51.797 21.377 51.611 20.214 51.346C21.378 51.61 22.571 51.797 23.788 51.9Z" fill="white"/>
-        </svg>
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M39.9858 7.05955V32.8395C39.9858 34.1095 39.1958 35.2395 38.0058 35.6595L29.1858 39.7995L29.9858 28.9495V10.9495L29.1858 0.0995483L38.0058 4.23955C39.1958 4.65955 39.9858 5.78955 39.9858 7.05955Z" fill="#29B6F6"/>
-            <path d="M4.98576 29.8456L29.9858 10.9496V1.30256C29.9858 0.104556 28.5038 -0.455444 27.7108 0.442556L0.643761 25.1886C-0.256239 26.0186 -0.20524 27.4556 0.75076 28.2206C0.75076 28.2206 2.07476 29.4526 2.55376 29.7946C3.28976 30.3196 4.25676 30.3796 4.98576 29.8456Z" fill="#0277BD"/>
-            <path d="M4.98576 10.0536L29.9858 28.9496V38.5966C29.9858 39.7946 28.5038 40.3546 27.7108 39.4566L0.643761 14.7106C-0.256239 13.8806 -0.20524 12.4436 0.75076 11.6786C0.75076 11.6786 2.07476 10.4466 2.55376 10.1046C3.28976 9.57956 4.25676 9.51956 4.98576 10.0536Z" fill="#0288D1"/>
-        </svg>
-       </div>
-           
+    </section>
 
-    </div>
-    <!-- <div class="calendar">Loading the data just for you.</div> -->
-
-    <div id="projects" class="section">
-        <h1>Projects</h1>
-        <div class="project">
-            <div class="p_head">
-                <h3>NDTV Clone</h3>
-                <p class="grey_text">2022</p>
-                <a href="https://ndtv-hot-wood-7345.netlify.app/" target="_blank">View Demo</a>
-                <a href="https://github.com/kieransahoo/hot-wood-7345.git" target="_blank">View Repo</a>
-            </div>
-            <div class="p_detail">
-                <img class="p_img"  src="./resources/Screenshot (63).png" alt="">
+    <!-- Project Section  -->
+    <section id="project">
+        <div class="heading">
+            <h2>Projects</h2>
+            <p>Recent Works</p>
+        </div>
+        <div class="project-content">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="./images/ndtv.png" alt="">
+                <h1>NDTV Clone</h1>
+                <p class="links">
+                    <a href="https://ndtv-hot-wood-7345.netlify.app/" target="_blank"><i class='bx bx-link' undefined ></i>Demo</a>
+                    <a href="https://github.com/kieransahoo/hot-wood-7345.git" target="_blank"><i class='bx bxl-github' ></i>Repo</a>
+                </p>
+                <p>Tech-Stack : HTML | CSS | JS |</p>
                 <p>Clone project of one of the biggest news channel in India which provide a new from all over the world in various categories like sports, politics, media, etc.
 
                 Collabrative project Built by 5 members in a week.</p>
+                
 
-                <p>HTML • CSS • JS • GITHUB</p>
+            </div>
+            <!-- Box 2-->
+            <div class="box">
+                <img src="./images/Home-KFC.png" alt="">
+                <h1>KFC Clone</h1>
+                <p class="links">
+                    <a href="https://stellar-hamster-d75ef8.netlify.app/" target="_blank"><i class='bx bx-link' undefined ></i>Demo</a>
+                    <a href="https://github.com/Randhir200/KFC-Clone.git" target="_blank"><i class='bx bxl-github' ></i>Repo</a>
+                </p>
+                <p>Tech-Stack :HTML | CSS | JS |</p>
+                <p>Clone project of Food franchise website KFC. Features included Login-Sign up ,Menu, Add to cart , checkout etc .
+                Collabrative project Built by 5 members in a week.
+                </p>
+                
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="git-calender">
+        <div class="heading">
+            <h2>GitHubCalendar</h2>
+            <p>Days of Coding</p>
+        </div>
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <p>Get In Touch</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-details">
+                <h3>Name:</h3>
+                <p>Kiran Kumar Sahoo</p>
+                <h3>Email:</h3>
+                <p>kieransahoo@outlook.com</p>
+                <h3>Location:</h3>
+                <p>Bangalore, India</p>
+                <p class="contact-socials">
+                    <a href="https://www.linkedin.com/in/kieransahoo/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/kieransahoo" target="_blank"><i class='bx bxl-github'></i></i></a>
+                    <a href=""><i class='bx bxl-instagram'></i></i></a>   
+                </p>
+            </div>
+
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message Here...."></textarea>
+                    <input type="button" value="Send" class="contact-button">
+                </form>
+
             </div>
         </div>
-        <div class="project">
-            <div class="p_head">
-                <h3>KFC Clone</h3>
-                <p class="grey_text">2022</p>
-                <a href="https://stellar-hamster-d75ef8.netlify.app/" target="_blank">View Demo</a>
-                <a href="https://github.com/Randhir200/KFC-Clone.git" target="_blank">View Repo</a>
-            </div>
-            <div class="p_detail">
-                <img class="p_img"  src="./resources/Home-KFC.png" alt="">
-                <p>Clone project of Food franchise website KFC. Features included Login-Sign up ,Menu, Add to cart , checkout etc .</p>
 
-                <p>HTML • CSS • JS • GITHUB</p>
-            </div>
-        </div>
-       
-        
-    </div>
+    </section>
 
-    <div id="contact" class="section">
-        <h1>GET IN TOUCH</h1>
-        <div class="c_container">
-            <div class="c_details">
-                <h4>Location :</h4>
-                <p class="grey_text">Bangalore, India</p>
-                <h4>Email :</h4>
-                <p class="grey_text">sahookieran@outlook.com</p>
-                <h3></h3>
-                <p></p>
-            </div>
-            <div class="message">
-                <p><input class="input" type="text" placeholder="Name" id="name"> <input class="input" type="text" placeholder="Email" id="cemail"></p>
-                <input class="input" type="text" placeholder="Subject" id="subject">
-                <input class="input" type="text" placeholder="Message" id="message">
-                <a href=""></a>
-                <button class="msg_btn">Submit</button>
-            </div>
-        </div>
-        
-    </div>
 </body>
 </html>
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
+<script src="./main.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-<script>
-    var btn = document.querySelector(".msg_btn");
-    btn.addEventListener("click",function(e){
-        e.preventDefault();
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("cemail").value;
-        var subject = document.getElementById("subject").value;
-        var message = document.getElementById("message").value;
-        var body = "name: "+name+"<br/> email : "+ email+"<br/> subject"+subject+"<br/> message"+ message;
-
-        Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "kkieran50@gmail.com",
-        Password : "A54012889E2509F144E49F256F5B51A5C069",
-        To : 'kkieran50@gmail.com',
-        From : email,
-        Subject : subject,
-        Body : body
-}).then(
-  message => alert(message)
-);
-        
-    })
-</script>
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
 <script>
     GitHubCalendar(".calendar", "kieransahoo");
-
-    // or enable responsive functionality:
+    // or enable responsive functionality
     GitHubCalendar(".calendar", "kieransahoo", { responsive: true });
-
-    // Use a proxy
-    GitHubCalendar(".calendar", "kieransahoo", {
-       proxy (kieransahoo) {
-         return fetch(`https://your-proxy.com/github?user=${kieransahoo}`)
-       }
-    }).then(r => r.text())
 </script>
