@@ -471,8 +471,7 @@ ul li a:hover{
     }
     .home-text{
         max-width: 400px;
-        margin-top: 500px;
-        
+        /* margin-top: 600px; */
     }
     .home-img{
         width: 345px;
@@ -509,7 +508,7 @@ ul li a:hover{
     }
     .home-text{
         max-width: 400px;
-        margin-top: 200px;
+        margin-top: 600px;
         
     }
     .home-img{
@@ -525,9 +524,14 @@ ul li a:hover{
     }
     .about-content,.skills-content,.contact-content{
         flex-direction: column;
+        
+    }
+    #about .heading{
+        margin-top: 100px;
     }
     .about-text{
         max-width: 280px;
+
     }
     .links a{
         padding: 8px 20px;
