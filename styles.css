@@ -163,6 +163,7 @@ ul li a:hover{
 .about-text{
     width: 500px;
     justify-content: center;
+    padding: 24px;
 }
 .about-text h1{
     font-size: 1.5rem;
