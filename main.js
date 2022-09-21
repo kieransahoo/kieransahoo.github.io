@@ -5,5 +5,4 @@ function toggleMenu(){
     menu.classList.toggle("active")
 }
 
-// Scroll Animation
 
