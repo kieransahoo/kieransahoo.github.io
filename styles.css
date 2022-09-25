@@ -288,6 +288,27 @@ ul li a:hover{
     box-shadow: 0 10px 34px rgba(0, 161, 176, 0.14);
     
 }
+.stat-content{
+    margin-top: 24px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.stat{
+    padding: 12px;
+    line-height: 25px;
+ 
+}
+.stat h3{
+    font-size: 24px;
+    text-align: center;
+}
+.stat p{
+    font-size: 18px;
+    margin-top: 12px;
+    text-align: center;
+}
 .calendar{
     margin-top: 40px;
     background: var(--second-color);
