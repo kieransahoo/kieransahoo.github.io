@@ -213,6 +213,7 @@ ul li a:hover{
     margin-top: 24px;
     /* border: 1px solid; */
 }
+
 .content .tech-stack{
     /* border: 1px solid; */
     width: 100%;
@@ -231,6 +232,8 @@ ul li a:hover{
     
     font-size: 18px;
 }
+
+
 
 /* Project Section */
 
@@ -294,6 +297,7 @@ ul li a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .stat{
     padding: 12px;
@@ -449,6 +453,10 @@ ul li a:hover{
     }
     .social{
         left: 100px;
+        
+    }
+    .social a{
+        margin-right: 4px;
     }
     .heading h2{
         font-size: 1.6rem;
