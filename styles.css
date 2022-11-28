@@ -313,6 +313,12 @@ ul li a:hover{
     margin-top: 12px;
     text-align: center;
 }
+
+.git-stat{
+    display: flex;
+    
+}
+
 .calendar{
     margin-top: 40px;
     background: var(--second-color);
@@ -474,6 +480,12 @@ ul li a:hover{
     .about-text p{
         line-height: 1.5rem;
     }
+    .git-stat{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
 }
 
 @media(max-width: 871px){
@@ -533,6 +545,10 @@ ul li a:hover{
     .contact-form{
         width: 300px;
     }
+    .git-stat{
+        display: flex;
+        flex-direction: column; 
+    }
 }
 @media(max-width: 360px){
     section{
@@ -575,5 +591,9 @@ ul li a:hover{
     }
     .contact-form{
         width: 300px;
+    }
+    .git-stat{
+        display: flex;
+        flex-direction: column; 
     }
 }
