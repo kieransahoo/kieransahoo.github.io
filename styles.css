@@ -318,6 +318,9 @@ ul li a:hover{
     display: flex;
     
 }
+.git-stat>img{
+    margin-bottom: 12px;
+}
 
 .calendar{
     margin-top: 40px;

@@ -28,7 +28,8 @@ sr.reveal(".tech-stack",{delay:200})
 sr.reveal(".project-content",{})
 sr.reveal(".box",{delay:200})
 
-sr.reveal(".calendar",{})
+sr.reveal(".git-stat",{})
+sr.reveal(".calendar",{delay:200})
 
 sr.reveal(".contact-content",{})
 // sr.reveal(".contact-details",{delay:200})
