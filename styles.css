@@ -333,6 +333,7 @@ ul li a:hover{
 #contact{
    background: var(--second-color); 
 }
+
 #contact>.heading>h2{
     color: #fff;
     border-bottom: 3px solid #fff;
