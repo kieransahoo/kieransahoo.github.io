@@ -39,7 +39,7 @@ sr.reveal(".box",{delay:200})
 // sr.reveal(".git-stat",{})
 // sr.reveal(".calendar",{delay:200})
 
-sr.reveal(".contact-content",{})
+//sr.reveal(".contact-content",{})
 // sr.reveal(".contact-details",{delay:200})
 // sr.reveal(".contact-form",{delay:200})
 
