@@ -1,11 +1,11 @@
 let resume = document.getElementById("downloadresume");
 resume.addEventListener("click",function(){
-    window.open("https://drive.google.com/file/d/1PZb5FuiA8avpdB251Uio2xCAe3iqvc4b/view?usp=share_link")
+    window.open("https://drive.google.com/file/d/1A8IuBlLDRUyJAdZQ0Yl5iqzGYD_5fmNb/view?usp=share_link")
 })
 
 let resume2 = document.getElementById("downloadresume2");
 resume2.addEventListener("click",function(){
-    window.open("https://drive.google.com/file/d/1PZb5FuiA8avpdB251Uio2xCAe3iqvc4b/view?usp=share_link")
+    window.open("https://drive.google.com/file/d/1A8IuBlLDRUyJAdZQ0Yl5iqzGYD_5fmNb/view?usp=share_link")
 })
 
 function toggleMenu(){
@@ -39,7 +39,7 @@ sr.reveal(".box",{delay:200})
 // sr.reveal(".git-stat",{})
 // sr.reveal(".calendar",{delay:200})
 
-sr.reveal(".contact-content",{})
+//sr.reveal(".contact-content",{})
 // sr.reveal(".contact-details",{delay:200})
 // sr.reveal(".contact-form",{delay:200})
 
