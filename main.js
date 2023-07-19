@@ -1,11 +1,11 @@
 let resume = document.getElementById("downloadresume");
 resume.addEventListener("click",function(){
-    window.open("https://drive.google.com/file/d/1A8IuBlLDRUyJAdZQ0Yl5iqzGYD_5fmNb/view?usp=share_link")
+    window.open("https://drive.google.com/file/d/1_LAYkeKGjUSlkZEkgrSLDu_kaF2h7Hck/view?usp=sharing")
 })
 
 let resume2 = document.getElementById("downloadresume2");
 resume2.addEventListener("click",function(){
-    window.open("https://drive.google.com/file/d/1A8IuBlLDRUyJAdZQ0Yl5iqzGYD_5fmNb/view?usp=share_link")
+    window.open("https://drive.google.com/file/d/1_LAYkeKGjUSlkZEkgrSLDu_kaF2h7Hck/view?usp=sharing")
 })
 
 function toggleMenu(){
